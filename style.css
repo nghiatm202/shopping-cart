@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #fd4646;
+  --text-color: #171427;
+  --background-color: #fff;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 100;
+  background-color: var(--background-color);
+}
+
+#header .logo {
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+#header i {
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+#header .cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px;
+  height: 100vh;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.cart .cart-box {
+  display: flex;
+  align-items: center;
+}
+
+.cart .cart-box img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  padding: 0px 10px 10px 10px;
+}
+
+.cart .cart-details .cart-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.cart .cart-details .cart-price {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cart .cart-details input {
+  width: 45px;
+  height: 45px;
+  outline: none;
+}
+
+/* Products */
+#products h2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#products .product-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#products .product-box {
+  width: 23%;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+}
+
+#products .product-box img {
+  width: 100%;
+}
+
+#products .product-box .product-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+#products .product-box .product-price {
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#products .product-box .product-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  padding: 10px;
+}
+
+#products .product-box:hover img {
+  filter: brightness(0.75);
+  transition: 0.3s;
+}
